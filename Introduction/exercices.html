@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicíos</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <script>
+      //Exercicío 1
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP",
+      };
+
+      function exercice1(endereco) {
+        return (
+          "O usuário mora em " +
+          endereco.cidade +
+          " / " +
+          endereco.uf +
+          ", no bairro " +
+          endereco.bairro +
+          ', na rua "' +
+          endereco.rua +
+          '" com nº ' +
+          endereco.numero +
+          "."
+        );
+      }
+
+      console.log(exercice1(endereco));
+
+      //Exercicio 2
+      function exercice2(x, y) {
+        for (var i = x; i <= y; i++) {
+          if (i % 2 == 0) {
+            console.log(i);
+          }
+        }
+      }
+
+      console.log(exercice2(2, 100));
+
+      //Exercicio 3
+      function exercice3(skills) {
+        if (skills.indexOf("Javascript") >= 0) {
+          return true;
+        }
+      }
+
+      var skills = ["Javascript", "ReactJS", "React Native"];
+
+      if (exercice3(skills)) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+
+      //Exercicio 4
+      function exercice4(anos) {
+        if (anos >= 0 && anos < 1) {
+          return "Iniciante";
+        } else if (anos >= 1 && anos < 3) {
+          return "Intermediário";
+        } else if (anos >= 3 && anos < 6) {
+          return "Avançado";
+        } else {
+          return "Jedi Master";
+        }
+      }
+      var anosEstudo = 5;
+      console.log(exercice4(anosEstudo));
+
+      //Exercicio 5
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"],
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
+        },
+      ];
+
+      function exercice5(usuarios) {
+        
+      }
+    </script>
+  </body>
+</html>
