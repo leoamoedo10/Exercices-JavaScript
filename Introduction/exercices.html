@@ -87,8 +87,31 @@
       ];
 
       function exercice5(usuarios) {
-        
+        var string = "O " + aUsers.nome + " possui as habilidades: " + "";
+        console.log(aUsers);
+
+        for (var i; i <= aUsers.habilidades.length; i++) {
+          if (i.indexOf == aUsers.habilidades.length()) {
+            string = string + aUsers.habilidades[i.indexOf] + "]";
+          } else {
+            string = string + aUsers.habilidades[i.indexOf] + ", ";
+          }
+        }
+        console.log(string);
       }
+
+      // var usuarios = [
+      //   {
+      //     nome: "Diego",
+      //     habilidades: ["Javascript", "ReactJS", "Redux"],
+      //   },
+      //   {
+      //     nome: "Gabriel",
+      //     habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
+      //   },
+      // ];
+
+      var teste = showMyObj(usuarios);
     </script>
   </body>
 </html>
