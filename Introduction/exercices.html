@@ -4,7 +4,6 @@
     <title>Exercicíos</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
     <script>
       //Exercicío 1
       var endereco = {
@@ -87,31 +86,31 @@
       ];
 
       function exercice5(usuarios) {
-        var string = "O " + aUsers.nome + " possui as habilidades: " + "";
-        console.log(aUsers);
+        var string = "O " + usuarios.nome + " possui as habilidades: " + " ";
+        console.log(usuarios);
 
-        for (var i; i <= aUsers.habilidades.length; i++) {
-          if (i.indexOf == aUsers.habilidades.length()) {
-            string = string + aUsers.habilidades[i.indexOf] + "]";
-          } else {
-            string = string + aUsers.habilidades[i.indexOf] + ", ";
-          }
-        }
-        console.log(string);
+        // for (var i; i <= usuarios.habilidades.length; i++) {
+        //   if (i.indexOf == usuarios.habilidades.length) {
+        //     string = string + usuarios.habilidades[i.indexOf] + "]";
+        //   } else {
+        //     string = string + usuarios.habilidades[i.indexOf] + ", ";
+        //   }
+        // }
+        // console.log(string);
       }
 
-      // var usuarios = [
-      //   {
-      //     nome: "Diego",
-      //     habilidades: ["Javascript", "ReactJS", "Redux"],
-      //   },
-      //   {
-      //     nome: "Gabriel",
-      //     habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
-      //   },
-      // ];
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"],
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
+        },
+      ];
 
-      var teste = showMyObj(usuarios);
+      var teste = exercice5(usuarios);
     </script>
   </body>
 </html>
