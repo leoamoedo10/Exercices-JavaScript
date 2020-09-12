@@ -5,13 +5,24 @@
   </head>
   <body>
     <div id="app">
-      <button onclick="showAlert()"> Pressione </button>
+      <!-- <button onclick="showAlert()" > Pressione </button> -->
+      <input type="text" name="nome"/>
+      <button class="butao">Adicionar</button>
     </div>
     <script>
-      function showAlert() {
-        alert('Botão pressionado!');
-      }
+      // function showAlert() {
+      //   alert('Botão pressionado!');
+      // }
+      
+      var inputElement = document.querySelector('input[name=nome]');
+      var btnElement = document.querySelector('button.butao');
+
+        btnElement.onclick = function() {
+          var text = inputElement.value;
+
+          alert(text);
+        }
     </script>
-    
+
   </body>
 </html>
