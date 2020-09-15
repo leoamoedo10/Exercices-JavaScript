@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicios Manipulando a DOM</title>
+  </head>
+  <body>
+    <div id="app">
+      <button class="butao">Adicionar</button>
+      <div class="box"></div>
+    </div>
+    <script>
+      var boxElement = document.querySelector("div.box");
+      var btnElement = document.querySelector("button.butao");
+
+      btnElement.onclick = function () {
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroundColor = "#f00";
+      };
+    </script>
+  </body>
+</html>
