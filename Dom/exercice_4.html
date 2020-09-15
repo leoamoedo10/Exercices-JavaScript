@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicios Manipulando a DOM</title>
+  </head>
+  <body>
+    <ul></ul>
+    <input type="text" name="nome" />
+    <button onClick="adicionar()">Adicionar</button>
+
+    <script>
+      var nomes = [];
+      var listaElement = document.querySelector("ul");
+      var inputElement = document.querySelector("input");
+
+      function addItem(texto) {
+        var liElement = document.createElement("li");
+        var textElement = document.createTextNode(texto);
+        liElement.appendChild(textElement);
+        listaElement.appendChild(liElement);
+      }
+
+      function adicionar() {
+        addItem(inputElement.value);
+        inputElement.value = "";
+      }
+
+      for (nome of nomes) {
+        addItem(nome);
+      }
+    </script>
+  </body>
+</html>
